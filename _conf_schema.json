@@ -1,0 +1,67 @@
+{
+  "base_url": {
+    "description": "sb6657 后端地址",
+    "type": "string",
+    "default": "https://hguofichp.cn:10086",
+    "hint": "若站点后端变更，可在这里修改。"
+  },
+  "keyword": {
+    "description": "主搜索关键词",
+    "type": "string",
+    "default": "niko",
+    "hint": "主关键词。插件还会自动兼容 niko / NiKo / NIKO。"
+  },
+  "extra_keywords": {
+    "description": "额外搜索关键词",
+    "type": "string",
+    "default": "尼扣,虾",
+    "hint": "多个关键词用逗号分隔，例如：尼扣,虾,三楼,小孩。插件会同时搜索这些关键词，并把它们作为相关弹幕的判断依据。"
+  },
+  "page_size": {
+    "description": "每次搜索返回数量",
+    "type": "int",
+    "default": 50,
+    "hint": "越大随机池越大，但请求更重。"
+  },
+  "interval_minutes": {
+    "description": "定时播报间隔，单位分钟",
+    "type": "int",
+    "default": 60,
+    "hint": "例如 60 表示每 60 分钟播报一次；10 表示每 10 分钟播报一次。"
+  },
+  "push_prefix": {
+    "description": "推送前缀",
+    "type": "string",
+    "default": "【NiKo 弹幕播报】"
+  },
+  "show_prefix": {
+    "description": "是否显示推送前缀",
+    "type": "bool",
+    "default": true,
+    "hint": "开启时消息会带 push_prefix；关闭后只发送弹幕正文和可选附加信息。"
+  },
+  "include_meta": {
+    "description": "是否显示标签、复制、投稿等附加信息",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后会显示：标签｜点赞｜复制｜投稿。关闭后只显示弹幕正文。"
+  },
+  "push_on_start": {
+    "description": "插件启动后是否立即播报一次",
+    "type": "bool",
+    "default": false,
+    "hint": "关闭时，插件会等一个完整间隔后再第一次播报。"
+  },
+  "block_llm_in_bound_targets": {
+    "description": "绑定会话中是否阻止 LLM 自动回复",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后，已绑定会话里的普通消息不会因为本插件触发 LLM 回复，可避免引用弹幕后出现非弹幕消息。"
+  },
+  "no_repeat_cache_size": {
+    "description": "短期去重缓存数量",
+    "type": "int",
+    "default": 200,
+    "hint": "用于减少短期内重复发送同一条弹幕。"
+  }
+}

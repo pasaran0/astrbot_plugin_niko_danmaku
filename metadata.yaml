@@ -1,0 +1,6 @@
+name: astrbot_plugin_niko_danmaku
+display_name: NiKo 弹幕播报
+desc: 定时间隔从 sb6657.cn 搜索并推送一条与 NiKo/niko 有关的弹幕。
+version: v1.4.1
+author: pasarano
+repo: ""
