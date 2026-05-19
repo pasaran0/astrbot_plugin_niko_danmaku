@@ -263,7 +263,7 @@ POST /machine/pageSearch
 
 ### 为什么绑定群里普通聊天不会触发 LLM 回复？
 
-默认 `block_llm_in_bound_targets = true`。这是为了避免引用弹幕或上下文感知插件导致机器人继续生成“测试成功”“我来修”等非弹幕消息。
+默认 `block_llm_in_bound_targets = true`。这是为了避免引用弹幕或上下文感知插件导致机器人继续生成非弹幕消息。
 
 如果你确实希望绑定群仍然保留普通 LLM 聊天能力，可以在配置中关闭该选项。
 
