@@ -20,7 +20,7 @@ DATA_FILE = DATA_DIR / "targets.json"
 
 @register(
     "astrbot_plugin_niko_danmaku",
-    "pasarano",
+    "pasaran0",
     "定时间隔推送一条 sb6657.cn 中与 NiKo/niko 有关的弹幕",
     "1.4.1",
 )
